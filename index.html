@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+<title>Empty</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+
+<body onload="onload()">
+
+<div class="w3-container">
+    <h1>Tiny PHP API Example</h1>
+    <p>Open developer tools (F12) and look for XHR tab under console.</p>
+    
+    <div class="w3-button w3-deep-purple" style="border-radius: 4px 4px 4px 4px;" onclick="sendSuccess()">Send Success</div> api.php/success
+    <br><br>
+    <div class="w3-container w3-border w3-padding w3-light-gray w3-round">        
+        <pre id="sendSuccess_data">...</pre>       
+    </div>
+    
+    <br><br>
+    
+    <div class="w3-button w3-deep-purple" style="border-radius: 4px 4px 4px 4px;" onclick="sendSuccessQuery()">Send Query string</div> api.php/queryString?imQuery=imString
+    <br><br>
+    <div class="w3-container w3-border w3-padding w3-light-gray w3-round">        
+        <pre id="sendSuccessQuery_data">...</pre>       
+    </div>
+    
+    <br><br>
+    
+    <div class="w3-button w3-deep-purple" style="border-radius: 4px 4px 4px 4px;" onclick="sendFail()">Send Fail</div> api.php/fail
+    <br><br>
+    <div class="w3-container w3-border w3-padding w3-light-gray w3-round">        
+        <pre id="sendFail_data">...</pre>       
+    </div>
+    
+    <br><br>
+    
+    <div class="w3-button w3-deep-purple" style="border-radius: 4px 4px 4px 4px;" onclick="sendError()">Send Error</div> api.php/badRouteName
+    <br><br>
+    <div class="w3-container w3-border w3-padding w3-light-gray w3-round">        
+        <pre id="sendError_data">...</pre>       
+    </div>
+        
+    
+</div>
+
+</body>
+</html>
+
+<script src="post.js"></script>
+<script src="app.js"></script>
+<script>
+
+function onload(){
+	console.log('Page Loaded!');
+}
+
+</script>
